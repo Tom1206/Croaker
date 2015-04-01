@@ -1,23 +1,40 @@
 .croaker {
-
 background-color : green;
 color : white;
 font-size : 25px;
 font-weight : bold;
 height : 80px;
 padding : 19px 0 0 100px;
+margin-bottom :100px;
 }
 
 .accueil {
-
-padding : 0 0 0 40%;
+padding : 0 0 0 1%;
 
 }
 
 .identifiant {
-padding : 0 0 0 50%;
 display : block;
 position : absolute;
+padding : 0 0 0 60%;
 top : 19px;
 }
 
+.formulaire {
+width : 50%;
+margin: auto;
+text-align: center;
+}
+
+
+.social {
+position : absolute;
+bottom : 20px;
+
+}
+
+.droit {
+position : absolute;
+bottom : 0px;
+left : 50%
+}
