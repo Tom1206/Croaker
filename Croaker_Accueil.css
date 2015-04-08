@@ -9,7 +9,7 @@ width : 40%;
 }
 
 
-.droit {
+.footer {
 position:fixed;
 bottom:0;
 left:0;
@@ -18,10 +18,32 @@ width:100%;
 padding-top : 10px;
 border-top: 1px solid #c6c6c6;
 background-color : #474746;
+opacity : 0.6;
+font-variant: small-caps;
 
 }
-.droit p {
-text-align : center;
+
+.footer ul li a{
+text-decoration:none;
+color : white; 
+}
+
+.footer ul li a:hover{
+text-decoration:none;
+color : black; 
+}
+
+
+.footer ul li {
+position: relative;
+font-size : 12px;
+display: inline-block;
+margin: 0 10px;
+text-decoration:none; 
+
+}
+
+ul li.droit {
+left : 65%;
 color : #EDEDEC;
-font-variant: small-caps;
 }
