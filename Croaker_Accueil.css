@@ -11,32 +11,11 @@ text-align: center;
 }
 
 
-.
-
-.social ul li a {
-	position: relative;
-	display: inline-block;
-	width: 78px;
-	height: 78px;
-	background-repeat: no-repeat;
-	background-position: 50%;
-	}
-
-.social ul li.facebook a {
-	background-image: url('img/facebook.png');
-}
-
-.social ul li.twitter a {
-	background-image: url('img/twitter.png');
-}
-
-
-
 .droit {
 position:fixed;
 bottom:0;
 left:0;
-height:100px;
+height:40px;
 width:100%;
 padding-top : 10px;
 border-top: 1px solid #c6c6c6;
