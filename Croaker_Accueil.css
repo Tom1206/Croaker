@@ -1,23 +1,7 @@
-.croaker {
-background-color : green;
-color : white;
-font-size : 25px;
-font-weight : bold;
-height : 80px;
-padding : 19px 0 0 100px;
-margin-bottom :100px;
-}
-
-.accueil {
-padding : 0 0 0 1%;
-
-}
-
-.identifiant {
-display : block;
-position : absolute;
-padding : 0 0 0 60%;
-top : 19px;
+body {
+background-image:url(img/Fond-Accueil.jpg); 
+background-attachment:fixed; 
+background-size:cover;
 }
 
 .formulaire {
@@ -27,11 +11,7 @@ text-align: center;
 }
 
 
-.social {
-position : absolute;
-bottom : 20px;
-
-}
+.
 
 .social ul li a {
 	position: relative;
