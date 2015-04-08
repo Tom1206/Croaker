@@ -4,8 +4,23 @@ background-attachment:fixed;
 background-size:cover;
 }
 
-.formulaire {
-width : 40%;
+.formulaire1 {
+border: 1px solid #c6c6c6;
+width : 25%;
+background-color:white;
+padding: 5px 5px 5px 5px;
+position : relative;
+left:30px;
+}
+
+.formulaire2 {
+border: 1px solid #c6c6c6;
+position : relative;
+width : 25%;
+background-color:white;
+padding: 5px 5px 5px 5px;
+top: 20px;
+left:30px;
 }
 
 
