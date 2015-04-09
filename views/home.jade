@@ -4,8 +4,8 @@ head
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='viewport', content='width=device-width, initial-scale=1')
   // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
-  title Accueil
-  link(rel='stylesheet', href='Croaker_principal.css')
+  title Connexion
+  link(rel='stylesheet', href='stylesheets/style.css')
   // Bootstrap
   // Latest compiled and minified CSS
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
@@ -36,10 +36,10 @@ nav.navbar.navbar-default
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav
         li
-          a(href='#') Connexion 
+          a(href='/') Connexion
         li.active
-          a(href='principal.html')
-            | Accueil
+          a(href='/home')
+            | Acceuil 
             span.sr-only (current)
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
@@ -69,15 +69,13 @@ nav.navbar.navbar-default
     // /.navbar-collapse
   // /.container-fluid
 section
-  footer
-    // Footer
-    .footer
-      ul.navbar-footer
-        li
-          a(href='principal.html') Accueil
-        li
-          a(href='#') Connexion
-        li
-          a(href='#') A propos
-        li.droit &copy; 2015 Croaker. Tous droits r&eacute;serv&eacute;s
-    // Footer end
+footer
+  .footer
+    ul.navbar-footer
+      li
+        a(href='/home') Accueil
+      li
+        a(href='/') Connexion
+      li
+        a(href='#') A propos
+      li.droit &copy; 2015 Croaker. Tous droits r&eacute;serv&eacute;s
