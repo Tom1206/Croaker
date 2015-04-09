@@ -5,22 +5,27 @@ background-size:cover;
 }
 
 .formulaire1 {
-border: 1px solid #c6c6c6;
-width : 25%;
-background-color:white;
-padding: 5px 5px 5px 5px;
-position : relative;
-left:30px;
+border: 1px solid rgba(240, 240, 240, 0.9);
+width: 25%;
+background-color: rgba(252, 252, 252, 0.95);
+padding: 10px 10px 0px 10px;
+border-radius: 7px;
+box-shadow: 1px 1px 3px #7b7b7b;
+position: relative;
+top: 15px;
+left: 35px;
 }
 
 .formulaire2 {
-border: 1px solid #c6c6c6;
-position : relative;
-width : 25%;
-background-color:white;
-padding: 5px 5px 5px 5px;
-top: 20px;
-left:30px;
+border: 1px solid rgba(240, 240, 240, 0.9);
+position: relative;
+width: 25%;
+background-color: rgba(252, 252, 252, 0.95);
+padding: 10px 10px 0px 10px;
+border-radius: 7px;
+box-shadow: 1px 1px 3px #7b7b7b;
+top: 35px;
+left: 35px;
 }
 
 
