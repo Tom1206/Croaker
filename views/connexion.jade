@@ -33,7 +33,9 @@ html(lang='fr')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#') Croaker
+          a.pull-left(href='/')
+            img.img-responsive(alt='Croaker', src='/images/croaker_icon.png')
+          a.navbar-brand(href='/') Croaker
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
@@ -42,7 +44,7 @@ html(lang='fr')
                 | Connexion 
                 span.sr-only (current)
             li
-              a(href='/home') Acceuil
+              a(href='/home') Accueil
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                 | Dropdown 
@@ -71,7 +73,7 @@ html(lang='fr')
         // /.navbar-collapse
       // /.container-fluid
     section
-      .formulaire
+      .formulaires
         // Formulaire de connexion
         .formulaire1
           form.form-horizontal

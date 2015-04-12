@@ -4,6 +4,16 @@ background-attachment:fixed;
 background-size:cover;
 }
 
+.pull-left {
+    width: 50px;
+    margin-right: 7px;
+    margin-left: 2px;
+
+}
+
+.navbar-brand {
+}
+
 .formulaire1 {
 border: 1px solid rgba(240, 240, 240, 0.9);
 width: 25%;
