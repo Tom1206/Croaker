@@ -1,7 +1,8 @@
 .connexion {
-background-image:url(../images/Fond-Accueil.jpg);
-background-attachment:fixed;
-background-size:cover;
+background-image: url(../images/Fond-Accueil.jpg);
+background-attachment: fixed;
+background-size: cover;
+background-position: 100% 70%;
 }
 
 .pull-left {
