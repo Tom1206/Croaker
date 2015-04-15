@@ -35,7 +35,8 @@ html(lang='fr')
             span.icon-bar
           a.pull-left(href='/')
             img.img-responsive(alt='Croaker', src='/images/croaker_icon.png')
-          a.navbar-brand(href='/') Croaker
+          a.navbar-brand(href='/')
+            .Croaker-title Croaker
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
@@ -45,31 +46,10 @@ html(lang='fr')
                 span.sr-only (current)
             li
               a(href='/home') Accueil
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | Dropdown 
-                span.caret
-              ul.dropdown-menu(role='menu')
-                li
-                  a(href='#') Action
-                li
-                  a(href='#') Another action
-                li
-                  a(href='#') Something else here
-                li.divider
-                li
-                  a(href='#') Separated link
-                li.divider
-                li
-                  a(href='#') One more separated link
           form.navbar-form.navbar-left(role='search')
             .form-group
               input.form-control(type='text', placeholder='Search')
             button.btn.btn-default(type='submit') Submit
-          ul.nav.navbar-nav.navbar-right
-            li
-            li
-              a(href='#') Link
         // /.navbar-collapse
       // /.container-fluid
     section
@@ -121,3 +101,4 @@ html(lang='fr')
             li
               a(href='#') A propos
             li.droit © 2015 Croaker. Tous droits réservés
+
