@@ -79,3 +79,7 @@ color : #EDEDEC;
 .Croaker-title {
 color : #25953e;
 }
+
+textarea {
+resize: none;
+}
