@@ -6,14 +6,11 @@ background-position: 100% 70%;
 }
 
 .pull-left {
-    width: 50px;
-    margin-right: 7px;
-    margin-left: 2px;
-
+width: 50px;
+margin-right: 7px;
+margin-left: 2px;
 }
 
-.navbar-brand {
-}
 
 .formulaire1 {
 border: 1px solid rgba(240, 240, 240, 0.9);
