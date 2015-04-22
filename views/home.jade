@@ -70,7 +70,17 @@ html(lang='fr')
                   a(href='#') One more separated link
         // /.navbar-collapse
       // /.container-fluid
+      
     section
+      block content
+        h1= title
+        form(action='/home', method='POST')
+          textarea(name="croak", rows=3, columns=50)
+          input(type='submit', content='croak')
+
+        ul
+          - each croak in croaks
+            li= croak
     footer
       .footer
         ul.navbar-footer
@@ -81,4 +91,3 @@ html(lang='fr')
           li
             a(href='#') A propos
           li.droit © 2015 Croaker. Tous droits réservés
-
