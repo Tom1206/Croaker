@@ -23,12 +23,6 @@ router.get('/', function(req, res) {
     failureRedirect: '/',
     failureFlash : true 
   }));
- 
-  
-  router.get('/', function(req, res){
-    res.render('register',{message: req.flash('message')});
-  });
- 
   
   router.post('/', passport.authenticate('signup', {
     successRedirect: '/home',
