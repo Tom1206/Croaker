@@ -104,7 +104,7 @@ margin-top : 25px;
 }
 
 
-.container li {
+.container .croak {
 font-size : 15px;
 display : block;
 list-style-type:none;
@@ -115,7 +115,6 @@ min-height: 75px;
 min-width : 300px;
 margin : 10px 0 10px 0;
 padding-left : 80px;
-font-variant: small-caps;
 background:url(../images/inconnu.jpg) no-repeat
 
 }
@@ -126,7 +125,3 @@ background-attachment: fixed;
 background-size: cover;
 background-position: 100% 70%;
 }
-
-
-
-

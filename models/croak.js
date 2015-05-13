@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 
-module.exports = mongoose.model('Croak',{
+module.exports = mongoose.model('Tweet',{
 	username: String,
-	croak: String
+	tweet: String,
+	date: String
 });
