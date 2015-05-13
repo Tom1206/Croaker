@@ -24,11 +24,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.enable('trust proxy');
 
 // Configuring Passport
 var passport = require('passport');
 var expressSession = require('express-session');
-// TODO - Why Do we need this key ?
 app.use(expressSession({secret: 'mySecretKey'}));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -42,8 +42,10 @@ app.use(flash());
 var initPassport = require('./passport/init');
 initPassport(passport);
 
-var routes = require('./routes/index');
+var routes = require('./routes/index')(passport);
+var croak = require('./routes/croak')(passport);
 app.use('/', routes);
+app.use('/', croak);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

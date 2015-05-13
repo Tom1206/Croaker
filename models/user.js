@@ -5,3 +5,5 @@ module.exports = mongoose.model('User',{
     password: String,
     email: String
 });
+
+

@@ -56,41 +56,32 @@ html(lang='fr')
       .formulaires
         // Formulaire de connexion
         .formulaire1
-          form.form-horizontal
+          form.form-horizontal(role='form', action='/login', method='post')
             .form-group
               .col-sm-12
-                input#inputEmail3.form-control(type='email', placeholder='Email')
+                input#inputEmail3.form-control(type='name', name='username', placeholder='Nom')
             .form-group
               .col-sm-12
-                input#inputPassword3.form-control(type='password', placeholder='Mot de passe')
+                input#inputPassword3.form-control(type='password',name ='password', placeholder='Mot de passe')
             .form-group
               .col-sm-offset-0.col-sm-12
-                .checkbox
-                  label
-                    input(type='checkbox')
-                    |  Se souvenir de moi
-            .form-group
-              .col-sm-offset-0.col-sm-12
-                button.btn.btn-default(type='submit') Connexion
+                button.btn.btn-success(type='submit') Connexion
         .formulaire2
           p Pas encore membre ?
           // Formulaire d'inscription
-          form.form-horizontal
+          form.form-horizontal(role='form', action='/signup', method='post')
             .form-group
               .col-sm-12
-                input#inputEmail3.form-control(type='email', placeholder='Nom complet')
+                input#inputEmail3.form-control(type='name', name='username', placeholder='Nom complet')
             .form-group
               .col-sm-12
-                input#inputEmail3.form-control(type='email', placeholder='Email')
+                input#inputEmail3.form-control(type='email',name='email', placeholder='Email')
             .form-group
               .col-sm-12
-                input#inputPassword3.form-control(type='password', placeholder='Mot de passe')
-            .form-group
-              .col-sm-12
-                input#inputPassword3.form-control(type='password', placeholder='Confirmer le mot de passe')
+                input#inputPassword3.form-control(type='password',name='password', placeholder='Mot de passe')
             .form-group
               .col-sm-offset-0.col-sm-12
-                button.btn.btn-default(type='submit') S'inscrire
+                button.btn.btn-success(type='submit') S'inscrire
       footer
         .footer
           ul.navbar-footer

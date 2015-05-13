@@ -1,33 +1,36 @@
 var express = require('express');
+var authenticate = require('../passport/authenticate.js');
+
 var router = express.Router();
 
+var User = require('../models/user');
 
-var croaks = [];
- 
-router.post('/home', function(req, res, next) {
-    croaks.unshift(req.body.croak);
-    res.redirect('/home')
-});
+module.exports = function(passport){
 
-router.get('/home', function(req, res, next) {
-  res.render('home', { croaks: croaks });
-});
+	/* / */
+	router.get('/', function(req, res) {
+		res.render('index', { message: req.flash('message') });
+	});
 
-router.get('/', function(req, res) {
-  res.render('index');
-});
- 
-  /*
-  router.post('/', passport.authenticate('login', {
-    successRedirect: '/home',
-    failureRedirect: '/',
-    failureFlash : true 
-  }));
-  
-  router.post('/', passport.authenticate('signup', {
-    successRedirect: '/home',
-    failureRedirect: '/',
-    failureFlash : true 
-  }));*/
+	/* /login */
+	router.post('/login', passport.authenticate('login', {
+		successRedirect: '/home',
+		failureRedirect: '/',
+		failureFlash : true
+	}));
 
-module.exports = router;
+	/* /signup */
+	router.post('/signup', passport.authenticate('signup', {
+		successRedirect: '/home',
+		failureRedirect: '/',
+		failureFlash : true
+	}));
+
+	router.get('/signout', function(req, res) {
+		req.logout();
+		res.redirect('/');
+	});
+
+
+	return router;
+}
