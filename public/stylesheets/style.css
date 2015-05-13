@@ -5,11 +5,13 @@ background-size: cover;
 background-position: 100% 70%;
 }
 
+
 .pull-left {
 width: 50px;
 margin-right: 7px;
 margin-left: 2px;
 }
+
 
 
 .formulaire1 {
@@ -38,7 +40,7 @@ left: 35px;
 
 
 .footer {
-position:fixed;
+position : fixed;
 bottom:0;
 left:0;
 height:30px;
@@ -83,3 +85,48 @@ color : #25953e;
 textarea {
 resize: none;
 }
+
+.container  {
+margin-top : 75px;
+border-radius: 7px;
+box-shadow: 1px 1px 3px #7b7b7b;
+min-height : 800px;
+padding-bottom : 50px;
+margin-bottom: 35px;
+border-left: 1px solid  #c6c6c6;
+border-right: 1px solid  #c6c6c6;
+border-top : 1px solid  #c6c6c6;
+background-color: rgba(252, 252, 252, 0.95);
+}
+
+.container .form-control {
+margin-top : 25px;
+}
+
+
+.container li {
+font-size : 15px;
+display : block;
+list-style-type:none;
+text-align: justify;
+text-indent: 10px;
+border : 1px solid  #c6c6c6;
+min-height: 75px;
+min-width : 300px;
+margin : 10px 0 10px 0;
+padding-left : 80px;
+font-variant: small-caps;
+background:url(../images/inconnu.jpg) no-repeat
+
+}
+
+body {
+background-image: url(../images/Fond-Accueil.jpg);
+background-attachment: fixed;
+background-size: cover;
+background-position: 100% 70%;
+}
+
+
+
+
