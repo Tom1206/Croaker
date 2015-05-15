@@ -12,6 +12,10 @@ module.exports = function(passport){
 		res.render('index', { message: req.flash('message') });
 	});
 
+	router.get('/propos', function(req, res) {
+		res.render('propos', { message: req.flash('message') });
+	});
+
 	/* /login */
 	router.post('/login', passport.authenticate('login', {
 		successRedirect: '/home',
