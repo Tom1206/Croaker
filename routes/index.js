@@ -12,6 +12,7 @@ module.exports = function(passport){
 		res.render('index', { message: req.flash('message') });
 	});
 
+	/* /propos */
 	router.get('/propos', function(req, res) {
 		res.render('propos', { message: req.flash('message') });
 	});

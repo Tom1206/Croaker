@@ -33,30 +33,32 @@ html(lang='fr')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.pull-left(href='/')
+          a.pull-left(href='/home')
             img.img-responsive(alt='Croaker', src='/images/croaker_icon.png')
-          a.navbar-brand(href='#')
+          a.navbar-brand(href='/home')
             .Croaker-title Croaker
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li
-              a(href='/') Connexion
-            li
-              a(href='/home')
-                | Accueil 
-                span.sr-only (current)
-          form.navbar-form.navbar-left(role='search')
-            .form-group
-              input.form-control(type='text', placeholder='Search')
-            button.btn.btn-primary(type='submit') Submit
           ul.nav.navbar-nav.navbar-right
-            li
+            li.search
+              form.navbar-form(role='search', action='/search', method='post', enctype='plain')
+                .input-group
+                  input.form-control(type='text', placeholder='Rechercher', name='research')
+                  .input-group-btn
+                    button.btn.btn-default(type='submit')
+                      span.glyphicon.glyphicon-search
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | 
-                
+                | #{user.username} 
+                span.caret
               ul.dropdown-menu(role='menu')
+                li
+                  a(href='/profile') Profil
+                li
+                  a(href='#') Croak
+                li
+                  a(href='/') Croak
+                li.divider
                 li
                   a(href='/signout') Se déconnecter
         // /.navbar-collapse

@@ -23,8 +23,10 @@ html(lang='fr')
     //if lt IE 9
       script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
       script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+        
+        
   body.connexion
-    nav.navbar.navbar-default
+    nav.navbar.navbar-default.navbar-fixed-top
       .container-fluid
         // Brand and toggle get grouped for better mobile display
         .navbar-header
@@ -33,25 +35,13 @@ html(lang='fr')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.pull-left(href='/')
+          a.pull-left(href='/home')
             img.img-responsive(alt='Croaker', src='/images/croaker_icon.png')
-          a.navbar-brand(href='/')
+          a.navbar-brand(href='/home')
             .Croaker-title Croaker
-        // Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.active
-              a(href='/')
-                | Connexion 
-                span.sr-only (current)
-            li
-              a(href='/home') Accueil
-          form.navbar-form.navbar-left(role='search')
-            .form-group
-              input.form-control(type='text', placeholder='Search')
-            button.btn.btn-default(type='submit') Submit
         // /.navbar-collapse
       // /.container-fluid
+
     section
       .formulaires
         // Formulaire de connexion
@@ -72,7 +62,7 @@ html(lang='fr')
           form.form-horizontal(role='form', action='/signup', method='post')
             .form-group
               .col-sm-12
-                input#inputEmail3.form-control(type='name', name='username', placeholder='Nom complet')
+                input#inputName3.form-control(type='name', name='username', placeholder='Pseudo')
             .form-group
               .col-sm-12
                 input#inputEmail3.form-control(type='email',name='email', placeholder='Email')
@@ -82,6 +72,7 @@ html(lang='fr')
             .form-group
               .col-sm-offset-0.col-sm-12
                 button.btn.btn-success(type='submit') S'inscrire
+
       footer
         .footer
           ul.navbar-footer
@@ -92,4 +83,3 @@ html(lang='fr')
             li
               a(href='/propos') A propos
             li.droit © 2015 Croaker. Tous droits réservés
-

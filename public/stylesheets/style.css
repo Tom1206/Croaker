@@ -27,7 +27,7 @@ padding: 10px 10px 0px 10px;
 border-radius: 7px;
 box-shadow: 1px 1px 3px #7b7b7b;
 position: relative;
-top: 15px;
+top: 90px;
 left: 35px;
 }
 
@@ -39,7 +39,19 @@ background-color: rgba(252, 252, 252, 0.95);
 padding: 10px 10px 0px 10px;
 border-radius: 7px;
 box-shadow: 1px 1px 3px #7b7b7b;
-top: 35px;
+top: 110px;
+left: 35px;
+}
+
+.formulaire3 {
+border: 1px solid rgba(240, 240, 240, 0.9);
+position: relative;
+width: 25%;
+background-color: rgba(252, 252, 252, 0.95);
+padding: 10px 10px 0px 10px;
+border-radius: 7px;
+box-shadow: 1px 1px 3px #7b7b7b;
+top: 90px;
 left: 35px;
 }
 
@@ -47,6 +59,7 @@ left: 35px;
 .Croaker-title {
 color : #25953e;
 }
+
 
 .footer {
 position : fixed;
@@ -90,7 +103,8 @@ color : #EDEDEC;
 /* CONTAINER /home */
 .container  {
 margin-top : 75px;
-padding-bottom : 50px;
+margin-bottom : 50px;
+padding-bottom : 20px;
 border-radius: 7px;
 box-shadow: 1px 1px 3px #7b7b7b;
 background-color: rgba(252, 252, 252, 0.95);
@@ -121,12 +135,14 @@ padding-left : 65%;
 
 .container .croak {
 display : block;
-border : 1px solid  #c6c6c6;
+border : 1px solid #c6c6c6;
+border-radius: 6px;
 min-height: 75px;
 min-width : 300px;
 margin : 10px 0 10px 0;
 padding-left : 45px;
-background:url(../images/inconnu.jpg) no-repeat
+background:url(../images/inconnu.png) no-repeat;
+background-color: rgb(254, 254, 254);
 
 }
 
@@ -135,7 +151,4 @@ font-size : 15px;
 font-family : Helvetica;
 padding : 0px 5px 0px 5px;
 display: inline-block;
-
 }
-
-
