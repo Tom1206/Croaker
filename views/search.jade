@@ -1,0 +1,120 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title Connexion
+    link(rel='stylesheet', href='stylesheets/style.css')
+    // Bootstrap
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css')
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='js/bootstrap.min.js')
+    // Latest compiled and minified JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+
+
+  body.connexion
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.pull-left(href='/home')
+            img.img-responsive(alt='Croaker', src='/images/croaker_icon.png')
+          a.navbar-brand(href='/home')
+            .Croaker-title Croaker
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.search
+              form.navbar-form(role='search', action='/search', method='post', enctype='plain')
+                .input-group
+                  input.form-control(type='text', placeholder='Rechercher', name='research')
+                  .input-group-btn
+                    button.btn.btn-default(type='submit')
+                      span.glyphicon.glyphicon-search
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                | #{user.username} 
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='/profile') Profil
+                li
+                  a(href='#') Croak
+                li
+                  a(href='/') Croak
+                li.divider
+                li
+                  a(href='/signout') Se déconnecter
+        // /.navbar-collapse
+      // /.container-fluid
+    
+
+  section
+    .container
+      .row
+        .col-xs-4
+          
+        .col-xs-4
+          
+          ul   
+          -nb_users= users.length
+          -var i=0
+          while i < nb_users
+            
+            li.user
+              p #{users[i].username}
+            -i=i+1
+          
+          ul   
+          -nb_croaks= croak.length
+          -var i=0
+          while i < nb_croaks
+            
+            li.croak
+              ul 
+                li.username #{croak[i].username}
+                li.content #{croak[i].croak}
+                li.date #{croak[i].date}
+            -i=i+1
+            
+            ul   
+            -nb_username= username.length
+            -var i=0
+            while i < nb_username
+              
+              li.croak
+                ul 
+                  li.username #{username[i].username}
+                  li.content #{username[i].croak}
+                  li.date #{username[i].date}
+              -i=i+1
+        
+        .col-xs-4
+  footer
+    .footer
+      ul.navbar-footer
+        li
+          a(href='/home') Accueil
+        li
+          a(href='/') Connexion
+        li
+          a(href='/propos') A propos
+        li.droit © 2015 Croaker. Tous droits réservé

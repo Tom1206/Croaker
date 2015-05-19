@@ -71,7 +71,7 @@ html(lang='fr')
           .col-xs-4
             form(role='form', name='form', action='/home', method='post', enctype='plain')
               .form-group
-                input.form-control(cols='100', rows='3',type='text', name='Tweet')
+                input.form-control(cols='100', rows='3',type='text', name='croak')
                 button.btn.btn-success.btn-lg.btn-block(type='submit') Croak          
           .col-xs-4 
         .row
@@ -80,15 +80,15 @@ html(lang='fr')
           .col-xs-4
             
             ul   
-            -nb_croaks= tweet.length
+            -nb_croaks= croak.length
             -var i=0
             while i < nb_croaks
               
               li.croak
                 ul 
-                  li.username #{tweet[i].username}
-                  li.content #{tweet[i].tweet}
-                  li.date #{tweet[i].date}
+                  li.username #{croak[i].username}
+                  li.content #{croak[i].croak}
+                  li.date #{croak[i].date}
               -i=i+1
           
           .col-xs-4
