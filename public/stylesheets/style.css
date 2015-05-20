@@ -162,3 +162,19 @@ font-family : Helvetica;
 padding : 0 5px 0 5px;
 display: inline-block;
 }
+
+li.dropdown img {
+width:20px;
+height:20px;
+padding-right : 3px;
+
+}
+
+.notfound  {
+font-size : 30px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align : center;
+
+}

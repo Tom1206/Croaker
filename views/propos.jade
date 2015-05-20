@@ -47,30 +47,34 @@ html(lang='fr')
                   .input-group-btn
                     button.btn.btn-default(type='submit')
                       span.glyphicon.glyphicon-search
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | #{user.username} 
-                span.caret
-              ul.dropdown-menu(role='menu')
-                li
-                  a(href='/profile') Profil
-                li
-                  a(href='#') Croak
-                li
-                  a(href='/') Croak
-                li.divider
-                li
-                  a(href='/signout') Se déconnecter
+
         // /.navbar-collapse
       // /.container-fluid
     
     section
       .container
           .row
-              .col-xs-4
-              .col-xs-4
-                 p En construction !   
-                
+          .jumbotron
+            h1 Croaker
+            p 
+            p Thomas MILLOT - Ibrahim IBIS - Alexis RENAULT
+            .progress
+              .progress-bar.progress-bar-striped.active(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                span.sr-only 45% Complete
+          .col-xs-4
+          .col-xs-4
+           img.img-responsive.img-rounded(alt='Croaker', src='/images/mongodb1.png')
+           br
+           img.img-responsive.img-rounded(alt='Croaker', src='/images/bootstrap1.png')
+           br
+           img.img-responsive.img-rounded(alt='Croaker', src='/images/github.png')
+           br
+           img.img-responsive.img-rounded(alt='Croaker', src='/images/nodejs.png')
+           br
+           img.img-responsive.img-rounded(alt='Croaker', src='/images/csshtmljs.png')
+          .col-xs-4
+                 
+            
                 
 
               
