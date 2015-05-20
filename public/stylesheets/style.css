@@ -1,17 +1,11 @@
-.connexion {
-background-image: url(../images/Fond-Accueil.jpg);
-background-attachment: fixed;
-background-size: cover;
-background-position: 100% 70%;
-}
-
-
+/*Redimension du logo*/
 .pull-left {
 width: 50px;
 margin-right: 7px;
 margin-left: 2px;
 }
 
+/*Image de fond*/
 body {
 background-image: url(../images/Fond-Accueil.jpg);
 background-attachment: fixed;
@@ -19,6 +13,7 @@ background-size: cover;
 background-position: 100% 70%;
 }
 
+/*Formulaire de connection*/
 .formulaire1 {
 border: 1px solid rgba(240, 240, 240, 0.9);
 width: 25%;
@@ -31,6 +26,7 @@ top: 90px;
 left: 35px;
 }
 
+/*Formulaire d'inscription*/
 .formulaire2 {
 border: 1px solid rgba(240, 240, 240, 0.9);
 position: relative;
@@ -47,7 +43,7 @@ left: 35px;
 color : #25953e;
 }
 
-
+/* FOOTER */
 .footer {
 position : fixed;
 bottom:0;
@@ -63,7 +59,6 @@ font-variant: small-caps;
 }
 
 
-/* FOOTER */
 .footer ul li a{
 text-decoration:none;
 color : white;

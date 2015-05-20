@@ -65,6 +65,7 @@ html(lang='fr')
         .row
           .col-xs-4
           .col-xs-4
+            //Zone de texte des croaks
             form(role='form', name='form', action='/home', method='post', enctype='plain')
               .form-group
                 input.form-control(cols='100', rows='3',type='text', name='croak')
@@ -74,7 +75,7 @@ html(lang='fr')
           .col-xs-4
             
           .col-xs-4
-            
+            //Affichage des croaks
             ul   
             -nb_croaks= croak.length
             -var i=0

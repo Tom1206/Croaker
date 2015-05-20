@@ -8,7 +8,7 @@ var User = require('../models/user');
 
 module.exports = function(passport){
 
-  /* search tool */
+  /* Recherche */
 	router.post('/search', authenticate.auth, function(req, res) {
 		croak.find({croak: new RegExp(req.body.research, 'i')}).sort({date: -1}).exec(function(err,croaks) {
 			User.find({username: new RegExp(req.body.research, 'i')}, function(err,users) {

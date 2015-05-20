@@ -11,7 +11,7 @@ module.exports = function(passport){
 	router.get('/profile', authenticate.auth, function(req, res) {
 		res.render('profile', { user: req.user,name_picture: req.user.picture, message: req.flash('message') });
 	});
-
+        
 	router.post('/profile', authenticate.auth, function(req, res){
 		User.find({username: req.body.username}).exec(function (err, user) {
 			if(user.length == 0 || req.body.username == req.user.username) {
@@ -23,12 +23,12 @@ module.exports = function(passport){
 		});
 	});
 
-    /* profile picture upload */
+    /* profile : upload de l'image */
   router.post('/upload', authenticate.auth, function(req, res) {
   	var form = new formidable.IncomingForm();
   	form.uploadDir = "./public/uploads/pictures";
 
-		// delete the old picture
+		// Supprime l'ancienne image
 		if(req.user.picture != "default")
 		{
 			fs.unlink("public/uploads/pictures/" + req.user.picture, function(err) {

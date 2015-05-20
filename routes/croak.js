@@ -9,7 +9,7 @@ var User = require('../models/user');
 
 
 module.exports = function(passport){
-
+                // Récupère et trie les croaks
     router.get('/home', authenticate.auth, function(req, res){
                 croak.find().limit(req.body.nb_croaks).sort({date: -1}).exec( function (err, croaks) {
               if (err) return console.error(err);
@@ -19,7 +19,7 @@ module.exports = function(passport){
 
 
     router.post('/home', authenticate.auth, function(req, res) {
-  		// Add the croak to the database
+  		// Ajoute le croak à la base de donnée
         var date = moment().format('YYYY/MM/DD, HH:mm');
   		var newcroak = new croak({username: req.user.username, picture: req.user.picture, croak: req.body.croak, date: date});
   		newcroak.save();
