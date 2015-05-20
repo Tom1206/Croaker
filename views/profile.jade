@@ -51,15 +51,12 @@ html(lang='fr')
                       span.glyphicon.glyphicon-search
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                img(src='./images/inconnu.png')
                 | #{user.username} 
                 span.caret
               ul.dropdown-menu(role='menu')
                 li
                   a(href='/profile') Profil
-                li
-                  a(href='#') Croak
-                li
-                  a(href='/') Croak
                 li.divider
                 li
                   a(href='/signout') Se déconnecter
