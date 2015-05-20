@@ -91,11 +91,11 @@ html(lang='fr')
           while i < nb_username
             
             li.croak
-              ul 
-                li.username #{username[i].username}
-                li.content #{username[i].croak}
-                li.date #{username[i].date}
-            -i=i+1
+                img.img-responsive.img-circle(src='./uploads/pictures/#{username[i].picture}')
+                p.name.h4 #{username[i].username}
+                p.content #{username[i].croak}
+                p.date #{username[i].date}
+              -i=i+1
 
           h2 Croaks
 
@@ -105,11 +105,11 @@ html(lang='fr')
           while i < nb_croaks
             
             li.croak
-              ul 
-                li.username #{croak[i].username}
-                li.content #{croak[i].croak}
-                li.date #{croak[i].date}
-            -i=i+1
+                img.img-responsive.img-circle(src='./uploads/pictures/#{croak[i].picture}')
+                p.name.h4 #{croak[i].username}
+                p.content #{croak[i].croak}
+                p.date #{croak[i].date}
+              -i=i+1
             
         .col-xs-4
   footer

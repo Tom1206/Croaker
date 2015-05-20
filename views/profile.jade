@@ -51,7 +51,6 @@ html(lang='fr')
                       span.glyphicon.glyphicon-search
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                img(src='./images/inconnu.png')
                 | #{user.username} 
                 span.caret
               ul.dropdown-menu(role='menu')
@@ -64,25 +63,44 @@ html(lang='fr')
       // /.container-fluid
     
     section
-      .formulaires
-        .formulaire3
-          // Formulaire d'inscription
-          form.form-horizontal(role='form', action='/profile', method='post')
-            .form-group
-              .col-sm-12
-                label(for='username') Pseudo
-                input#inputName3.form-control(type='name', name='username', placeholder="#{user.username}")
-            .form-group
-              .col-sm-12
-                label(for='email') Email
-                input#inputEmail3.form-control(type='email',name='email', placeholder='#{user.email}')
-            .form-group
-              .col-sm-12
-                label(for='password') Mot de passe
-                input#inputPassword3.form-control(type='password',name='password', placeholder='*********')
-            .form-group
-              .col-sm-offset-0.col-sm-12
-                button.btn.btn-success(type='submit') Modifier les informations
+    .container
+      .row
+          .col-md-6
+            h1  #{user.username} 
+            .formulaires
+              
+                // Formulaire d'inscription
+                form.form-horizontal(role='form', action='/profile', method='post')
+                  .form-group
+                    .col-md-12
+                      label(for='username') Pseudo
+                      input#inputName3.form-control(type='name', name='username', placeholder="#{user.username}")
+                  .form-group
+                    .col-md-12
+                      label(for='email') Email
+                      input#inputEmail3.form-control(type='email',name='email', placeholder='#{user.email}')
+                  .form-group
+                    .col-md-12
+                      label(for='password') Mot de passe
+                      input#inputPassword3.form-control(type='password',name='password', placeholder='*********')
+                  .form-group
+                    .col-sm-offset-0.col-sm-12
+                      button.btn.btn-success(type='submit') Modifier les informations
+          br
+          br
+          br
+          br
+          .col-md-6
+            img.img-responsive.img-thumbnail(src='./uploads/pictures/#{user.picture}', alt='Photo de profil !')
+            form.form-horizontal(action='/upload', enctype='multipart/form-data', method='post')
+                input(type='file', name='upload', multiple='multiple')
+                br
+                button.btn.btn-success(type='submit') Upload  
+                  span.glyphicon.glyphicon-camera
+                br
+          .col-md-6
+    
+      
 
       footer
         .footer

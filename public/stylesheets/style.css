@@ -43,19 +43,6 @@ top: 110px;
 left: 35px;
 }
 
-.formulaire3 {
-border: 1px solid rgba(240, 240, 240, 0.9);
-position: relative;
-width: 25%;
-background-color: rgba(252, 252, 252, 0.95);
-padding: 10px 10px 0px 10px;
-border-radius: 7px;
-box-shadow: 1px 1px 3px #7b7b7b;
-top: 90px;
-left: 35px;
-}
-
-
 .Croaker-title {
 color : #25953e;
 }
@@ -119,17 +106,19 @@ padding-top : 50px;
 min-width : 300px;
 }
 
-.container .username {
-margin-top : 5px;
-font-size : 15px;
+
+/* Croaks */
+.container .name.h4 {
+padding-top : 10px;
+padding-left : 100px;
 list-style-type: none;
 font-family : Lucida Sans Unicode;
+
 }
 
 .container .date {
 font-size : 10px;
 list-style-type: none;
-padding-top: 10px;
 padding-left : 65%;
 }
 
@@ -140,9 +129,7 @@ border-radius: 6px;
 min-height: 75px;
 min-width : 300px;
 margin : 10px 0 10px 0;
-padding-left : 45px;
-background:url(../images/inconnu.png) no-repeat;
-background-color: rgb(254, 254, 254);
+background-color : rgb(254,254,254);
 }
 
 .container .user {
@@ -156,25 +143,27 @@ padding-top : 10px;
 background-color: rgb(254, 254, 254);
 }
 
+.container .img-responsive.img-circle {
+height :75px;
+width : 75px;
+list-style-type: none;
+float:left;
+margin : 10px 0px 10px 10px;
+}
+
 .container .content {
 font-size : 15px;
 font-family : Helvetica;
-padding : 0 5px 0 5px;
+padding : 0px 15px 0px 15px;
 display: inline-block;
+text-align : justify;
 }
 
-li.dropdown img {
-width:20px;
-height:20px;
-padding-right : 3px;
-
-}
-
+/* Page 404 */
 .notfound  {
 font-size : 30px;
 display: block;
 margin-left: auto;
 margin-right: auto;
 text-align : center;
-
 }

@@ -13,6 +13,8 @@
     "debug": "~2.1.1",
     "express": "~4.12.2",
     "express-session": "^1.11.1",
+    "formidable": "^1.0.17",
+    "fs": "0.0.2",
     "jade": "~1.9.2",
     "moment": "^2.10.3",
     "mongoose": "^4.0.2",

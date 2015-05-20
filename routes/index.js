@@ -1,6 +1,5 @@
 var express = require('express');
 var authenticate = require('../passport/authenticate.js');
-
 var router = express.Router();
 
 var User = require('../models/user');

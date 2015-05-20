@@ -21,7 +21,7 @@ module.exports = function(passport){
     router.post('/home', authenticate.auth, function(req, res) {
   		// Add the croak to the database
         var date = moment().format('YYYY/MM/DD, HH:mm');
-  		var newcroak = new croak({username: req.user.username, croak: req.body.croak, date: date});
+  		var newcroak = new croak({username: req.user.username, picture: req.user.picture, croak: req.body.croak, date: date});
   		newcroak.save();
         res.redirect('/home');
     });
