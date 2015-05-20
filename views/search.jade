@@ -74,6 +74,8 @@ html(lang='fr')
           
         .col-xs-4
           
+          h2 Utilisateurs
+          
           ul   
           -nb_users= users.length
           -var i=0
@@ -83,6 +85,20 @@ html(lang='fr')
               p #{users[i].username}
             -i=i+1
           
+          ul   
+          -nb_username= username.length
+          -var i=0
+          while i < nb_username
+            
+            li.croak
+              ul 
+                li.username #{username[i].username}
+                li.content #{username[i].croak}
+                li.date #{username[i].date}
+            -i=i+1
+
+          h2 Croaks
+
           ul   
           -nb_croaks= croak.length
           -var i=0
@@ -95,18 +111,6 @@ html(lang='fr')
                 li.date #{croak[i].date}
             -i=i+1
             
-            ul   
-            -nb_username= username.length
-            -var i=0
-            while i < nb_username
-              
-              li.croak
-                ul 
-                  li.username #{username[i].username}
-                  li.content #{username[i].croak}
-                  li.date #{username[i].date}
-              -i=i+1
-        
         .col-xs-4
   footer
     .footer
